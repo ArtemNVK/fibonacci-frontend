@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+form label, p {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #0a2540;
+  margin: 0 50px;
+  padding: 8px 12px;
+  border-radius: 16.5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.9;
+  background-color: #8898aa;
+  transition: 150ms cubic-bezier(0.215,0.61,0.355,1);
+}
+
+input {
+  outline: none;
+  border-radius: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 1rem;
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+    rgb(60 66 87 / 16%) 0px 0px 0px 1px, 
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+input:focus {
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+  rgb(58 151 212 / 36%) 0px 0px 0px 4px, 
+  rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+  rgb(60 66 87 / 16%) 0px 0px 0px 1px, 
+  rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+  rgb(0 0 0 / 0%) 0px 0px 0px 0px, 
+  rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+.disabled {
+  opacity: 0.1;
+}
