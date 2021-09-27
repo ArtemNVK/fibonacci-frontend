@@ -8,7 +8,7 @@ export default function Main() {
     const inputValidation = num === undefined || isNaN(num);
 
     const postNum = async () => {
-        const result = await fetch("http://localhost:5000/api/numbers", {
+        const result = await fetch(process.env.API_ENDPOINT, {
             method: "POST",
             body: JSON.stringify({
                 num
